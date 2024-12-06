@@ -18,27 +18,27 @@ task. Processes data from [DummyJSON][3] making use of:
 ## Overview
 
 ```txt
-├──  dags                              # Airflow DAGs directory
-│   ├──  sql
-│   │   ├──  summarize_category.sql    # aggregate sales by category
-│   │   ├──  summarize_user.sql        # aggregate sale value and quantity by user
-│   │   ├──  transform_carts.sql       # transform carts, products and users for into final forms
-│   │   ├──  transform_products.sql
-│   │   └──  transform_users.sql
-│   └──  dummyjson_etl_dag.py          # Airflow DAG definition. Contains main application logic
-├──  datasets                          # where tasks in dummyjson_etl_dag.py store intermediate files
-├──  docs
-│   ├──  design.md                     # detailed description of project's design and implementation
-│   ├── 󱁉 dummyjson_dag_graph.dot       # graphviz graph of Airflow DAG
-│   └──  viz.py                        # simple visualization of summaries
-├──  include                           # put any files to include in airflow environment here
-├──  plugins                           # for custom or community Airflow plugins
-├──  tests
-├──  docker-compose.override.yml       # necessary for to setup cloud authentication
-├──  Dockerfile                        # Astro Runtime Docker Image
-├──  packages.txt                      # put OS-level packages required by DAGs here
-├──  README.md
-└──  requirements.txt                  # Python packages required by DAGs
+├── dags                              # Airflow DAGs directory
+│   ├── sql
+│   │   ├── summarize_category.sql    # aggregate sales by category
+│   │   ├── summarize_user.sql        # aggregate sale value and quantity by user
+│   │   ├── transform_carts.sql       # transform carts, products and users for into final forms
+│   │   ├── transform_products.sql
+│   │   └── transform_users.sql
+│   └── dummyjson_etl_dag.py          # Airflow DAG definition. Contains main application logic
+├── datasets                          # where tasks in dummyjson_etl_dag.py store intermediate files
+├── docs
+│   ├── design.md                     # detailed description of project's design and implementation
+│   ├── dummyjson_dag_graph.dot       # graphviz graph of Airflow DAG
+│   └── viz.py                        # simple visualization of summaries
+├── include                           # put any files to include in airflow environment here
+├── plugins                           # for custom or community Airflow plugins
+├── tests
+├── docker-compose.override.yml       # necessary for to setup cloud authentication
+├── Dockerfile                        # Astro Runtime Docker Image
+├── packages.txt                      # put OS-level packages required by DAGs here
+├── README.md
+└── requirements.txt                  # Python packages required by DAGs
 ```
 
 ## Installation
